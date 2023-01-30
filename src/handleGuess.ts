@@ -3,11 +3,11 @@ import { WordsList } from "./WordsList"
 export let guessArray = ["","","","",""]
 
 export const handleGuessInServer = (currentGuess:string[], theWord:string[]):string[]=>{
-   
+           console.log("theword",theWord)
+
     
     for (let i = 0; i < 5;i+=1) {
         console.log("currentguess[i]",currentGuess[i])
-        console.log("theword",theWord)
        const indexToCompare = theWord.indexOf(currentGuess[i])
        console.log("indextocompare in for", indexToCompare)
        if (indexToCompare === -1){
